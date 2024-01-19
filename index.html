@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textTOspeach</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+    <div id="main-div">
+        <form>
+            <div id="text-area-div">
+                <label for="text-area" class="text-area-label">Speach</label>
+                <textarea name="text-area" id="text-area" required> </textarea>
+            </div>
+            <div id="text-speed-div">
+                <label for="text-speed" class="text-speed-label">Speed</label>
+                <input type="number" name="text-speed" id="text-speed" min="0.1" max="9.9" step=".1" value="1">
+            </div>
+            <div id="text-pitch-div">
+                <label for="text-pitch" class="text-pitch-label">Pitch</label>
+                <input type="number" name="text-pitch" id="text-pitch" min="0.1" max="2" step=".1" value="1">
+            </div>
+            <div id="voice-list-div">
+                <label for="voice">Select voice</label>
+                <select name="voice" id="voice-list">
+
+                </select>
+
+            </div>
+            <div id="submit-div">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+        <button id="pause">Pause</button>
+        <button id="resume">Resume</button>
+
+    </div>
+
+    <script src="/index.js"></script>
+
+</body>
+
+</html>
